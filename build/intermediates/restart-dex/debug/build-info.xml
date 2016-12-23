@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    api-level="23"
+    density="xhdpi"
+    format="8"
+    plugin-version="2.2.0"
+    timestamp="14497587426764"
+    token="6594955928165700255"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="5023" />
+    <task
+        name="instant-run-dex"
+        duration="78" />
+    <task
+        name="instant-run-transform"
+        duration="166" />
+    <task
+        name="verifier"
+        duration="27" />
+
+    <artifact
+        location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
+
+    <build
+        timestamp="14192403890656"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/outputs/apk/Shop-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="14497587426764"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>

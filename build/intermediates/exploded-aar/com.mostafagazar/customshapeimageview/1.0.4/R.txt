@@ -1,0 +1,8 @@
+int attr shape 0x7f010000
+int attr svg_raw_resource 0x7f010001
+int id circle 0x7f020000
+int id rectangle 0x7f020001
+int id svg 0x7f020002
+int[] styleable CustomShapeImageView { 0x7f010000, 0x7f010001 }
+int styleable CustomShapeImageView_shape 0
+int styleable CustomShapeImageView_svg_raw_resource 1

@@ -1,0 +1,7 @@
+#Fri Dec 23 12:52:07 CST 2016
+base.0=/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0bae08b231556e612702c4831afce05d43cc836e
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_93bb229a6b7b11603d8e7e6034cbd66e6e936e93/classes.dex
+base.1=/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_93bb229a6b7b11603d8e7e6034cbd66e6e936e93
+file.0=/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0bae08b231556e612702c4831afce05d43cc836e/classes.dex

@@ -1,0 +1,282 @@
+[
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_ask_btn_haitao.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_ask_btn_haitao.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/gril.png",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/gril.png"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_we_btn_new.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_we_btn_new.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_ask_btn_text_color.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_ask_btn_text_color.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/alertdialog_left_selector.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/MyApplication/iOS_Dialog_Library/unspecified/res/drawable/alertdialog_left_selector.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_ask_btn_clothes.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_ask_btn_clothes.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_wifi_disable.png",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_wifi_disable.png"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_button_ok_bg_normal.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_button_ok_bg_normal.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_button_cancel_bg_normal.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_button_cancel_bg_normal.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/act_pay_wxpay.png",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/act_pay_wxpay.png"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_we_btn_video.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_we_btn_video.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_ask_btn_heathy.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_ask_btn_heathy.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/act_address_change_edit.png",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/act_address_change_edit.png"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/seletor_frag_login_btn_login.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/seletor_frag_login_btn_login.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_ask_btn_child.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_ask_btn_child.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/act_pay_alipay.png",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/act_pay_alipay.png"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_act_home_btn_home.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_act_home_btn_home.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_act_home_btn_text_color.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_act_home_btn_text_color.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_button_cancel_bg_selector.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_button_cancel_bg_selector.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_button_cancel_bg_focused.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_button_cancel_bg_focused.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/alertdialog_right_selector.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/MyApplication/iOS_Dialog_Library/unspecified/res/drawable/alertdialog_right_selector.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_ask_btn_media.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_ask_btn_media.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_ask_btn_hot.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_ask_btn_hot.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/boy.png",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/boy.png"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/actionsheet_single_selector.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/MyApplication/iOS_Dialog_Library/unspecified/res/drawable/actionsheet_single_selector.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_we_btn_news.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_we_btn_news.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_we_btn_hot.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_we_btn_hot.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_button_cancel_bg_tap.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_button_cancel_bg_tap.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/actionsheet_middle_selector.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/MyApplication/iOS_Dialog_Library/unspecified/res/drawable/actionsheet_middle_selector.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/alertdialog_single_selector.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/MyApplication/iOS_Dialog_Library/unspecified/res/drawable/alertdialog_single_selector.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_button_ok_bg_selector.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_button_ok_bg_selector.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/actionsheet_top_selector.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/MyApplication/iOS_Dialog_Library/unspecified/res/drawable/actionsheet_top_selector.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_button_check_selector.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_button_check_selector.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_ask_btn_zhuangxiu.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_ask_btn_zhuangxiu.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_ask_btn_beautif.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_ask_btn_beautif.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_dialog_bg.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_dialog_bg.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/actionsheet_bottom_selector.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/MyApplication/iOS_Dialog_Library/unspecified/res/drawable/actionsheet_bottom_selector.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_person_gv_item.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_person_gv_item.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_button_ok_bg_focused.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_button_ok_bg_focused.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_button_close_bg_selector.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_button_close_bg_selector.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/bmob_update_button_ok_bg_tap.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/bmob_update_button_ok_bg_tap.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/selector_frag_we_btn_hot_title.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable/selector_frag_we_btn_hot_title.xml"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_list_selector_holo_light.xml"
+    }
+]
