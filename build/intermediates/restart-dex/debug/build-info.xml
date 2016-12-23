@@ -4,22 +4,22 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="14497587426764"
+    timestamp="27561929863594"
     token="6594955928165700255"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="5023" />
+        duration="1857" />
     <task
         name="instant-run-dex"
-        duration="78" />
+        duration="31" />
     <task
         name="instant-run-transform"
-        duration="166" />
+        duration="51" />
     <task
         name="verifier"
-        duration="27" />
+        duration="5" />
 
     <artifact
         location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/reload-dex/debug/classes.dex"
@@ -33,7 +33,28 @@
             type="MAIN" />
     </build>
     <build
-        timestamp="14497587426764"
+        timestamp="24290003382783"
+        verifier="METHOD_DELETED" >
+        <artifact
+            location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="27319786334276"
+        verifier="CLASS_ADDED" >
+        <artifact
+            location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="27445266636849"
+        verifier="IMPLEMENTED_INTERFACES_CHANGE" >
+        <artifact
+            location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="27561929863594"
         verifier="COMPATIBLE" >
         <artifact
             location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/reload-dex/debug/classes.dex"

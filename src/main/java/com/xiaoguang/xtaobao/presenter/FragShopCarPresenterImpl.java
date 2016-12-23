@@ -3,8 +3,8 @@ package com.xiaoguang.xtaobao.presenter;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
+import android.view.View;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import com.baoyz.swipemenulistview.SwipeMenu;
@@ -14,6 +14,7 @@ import com.baoyz.swipemenulistview.SwipeMenuListView;
 import com.xiaoguang.xtaobao.R;
 import com.xiaoguang.xtaobao.adapter.FragShopcarAdapter;
 import com.xiaoguang.xtaobao.application.CustomApplcation;
+import com.xiaoguang.xtaobao.bean.Goods;
 import com.xiaoguang.xtaobao.bean.Orders;
 import com.xiaoguang.xtaobao.bean.ShopCar;
 import com.xiaoguang.xtaobao.contract.IFragShopCarContract;
@@ -22,7 +23,6 @@ import com.xiaoguang.xtaobao.util.ToastFactory;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import cn.bmob.v3.BmobBatch;
@@ -33,6 +33,7 @@ import cn.bmob.v3.datatype.BatchResult;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.QueryListListener;
+import cn.bmob.v3.listener.QueryListener;
 import cn.bmob.v3.listener.SaveListener;
 import cn.bmob.v3.listener.UpdateListener;
 
@@ -69,15 +70,15 @@ public class FragShopCarPresenterImpl implements IFragShopCarContract.IFragShopC
         mLv = view.getmFragShopcarLv();
         mCb = view.getmFragShopCarCb();
         mTvMoney = view.getmFragShopCarTvMoney();
-        //设置适配器
-        HashMap<Integer, Boolean> isChecked = new HashMap<>();
-        isChecked.put(0, false);
-        isChecked.put(1, false);
-        isChecked.put(2, false);
-        isChecked.put(3, false);
-        isChecked.put(4, false);
         listShopCas = new ArrayList<>();
-        FragShopcarAdapter.setIsSelected(isChecked);
+//        //设置适配器
+//        HashMap<Integer, Boolean> isChecked = new HashMap<>();
+//        isChecked.put(0, false);
+//        isChecked.put(1, false);
+//        isChecked.put(2, false);
+//        isChecked.put(3, false);
+//        isChecked.put(4, false);
+//        FragShopcarAdapter.setIsSelected(isChecked);
 
         //添加侧滑按钮
         addItemButton();
@@ -244,20 +245,21 @@ public class FragShopCarPresenterImpl implements IFragShopCarContract.IFragShopC
      */
     private void initEvent() {
         //给check 设置选中事件
-        mCb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        mCb.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {//全选
+            public void onClick(View v) {
+                if (!isSelectAll()) {//全选
                     // 遍历list的长度，将MyAdapter中的map值全部设为true
-                    for (int i = 0; i < 5; i++) {
+                    for (int i = 0; i < listShopCas.size(); i++) {
                         getIsSelected().put(i, true);
                     }
                     // 刷新listview和TextView的显示
                     dataChanged();
                     mCb.setText("取消全选");
+                    mCb.setChecked(true);
                 } else {//取消全选
                     // 遍历list的长度，将已选的按钮设为未选
-                    for (int i = 0; i < 5; i++) {
+                    for (int i = 0; i < listShopCas.size(); i++) {
                         if (FragShopcarAdapter.getIsSelected().get(i)) {
                             FragShopcarAdapter.getIsSelected().put(i, false);
                         }
@@ -265,13 +267,15 @@ public class FragShopCarPresenterImpl implements IFragShopCarContract.IFragShopC
                     // 刷新listview和TextView的显示
                     dataChanged();
                     mCb.setText("全选");
+                    mCb.setChecked(false);
                 }
+
             }
         });
 
         mLv.setOnMenuItemClickListener(new SwipeMenuListView.OnMenuItemClickListener() {
             @Override
-            public boolean onMenuItemClick(int position, SwipeMenu menu, int index) {
+            public boolean onMenuItemClick(final int position, SwipeMenu menu, int index) {
                 //获取选中的购物车中的id
                 //
                 LogUtils.i(TAG,"我的购物车中的"+listShopCas.size());
@@ -287,13 +291,37 @@ public class FragShopCarPresenterImpl implements IFragShopCarContract.IFragShopC
                         LogUtils.i(TAG, "我选中了删除按钮" + itemObjectId);
                         // 删除收货地址
                         delete(itemObjectId);
-                        listShopCas.remove(position);
-                        adapter.notifyDataSetChanged();
+                        BmobQuery<Goods> query = new BmobQuery();
+                        query.getObject(listShopCas.get(position).getGoodId(), new QueryListener<Goods>() {
+                            @Override
+                            public void done(Goods goods, BmobException e) {
+                                changeMoney(listShopCas.get(position).getCount(),-goods.getGoodsPrice());
+                                removeGoodIds(listShopCas.get(position).getGoodId());
+                                removShopCarIds(listShopCas.get(position).getGoodId());
+                                Log.i("pull","checkedShopCars = "+checkedShopCars.size()+" listShopCas = "+listShopCas.size());
+                                listShopCas.remove(position);
+                                dataChanged();
+                            }
+                        });
                         break;
                 }
                 return false;
             }
         });
+    }
+
+    @Override
+    public boolean isSelectAll(){
+        return checkedShopCars.size() == listShopCas.size()&&checkedShopCars.size()!=0;
+    }
+-
+    @Override
+    public void setSelectAll(boolean flag){
+        if(flag)
+            mCb.setText("取消全选");
+        else
+            mCb.setText("全选");
+        mCb.setChecked(flag);
     }
 
     /**
@@ -305,7 +333,6 @@ public class FragShopCarPresenterImpl implements IFragShopCarContract.IFragShopC
         ShopCar shopCar = new ShopCar();
         shopCar.setObjectId(item);
         shopCar.delete(new UpdateListener() {
-
             @Override
             public void done(BmobException e) {
                 view.canelLoadingDialog();

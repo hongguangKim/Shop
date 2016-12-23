@@ -85,5 +85,8 @@ public class IFragShopCarContract {
          * @param objectId
          */
         void removShopCarIds(String objectId);
+
+        boolean isSelectAll();
+        void setSelectAll(boolean flag);
     }
 }

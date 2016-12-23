@@ -1,6 +1,7 @@
 package com.xiaoguang.xtaobao.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -85,20 +86,26 @@ public class FragShopcarAdapter extends BaseAdapter {
 
         //设置数据
         // 根据isSelected来设置checkbox的选中状况
-        viewHolder.mcb.setChecked(getIsSelected().get(position));
+        viewHolder.mcb.setChecked(getIsSelected().get(position)==null?false:getIsSelected().get(position));
         final ViewHolder finalViewHolder = viewHolder;
         //查询id查询商品信息
         queryDatas(finalViewHolder, shopCars.get(position).getGoodId(), position);
         //设置数量
         finalViewHolder.mTvCount.setText(shopCars.get(position).getCount() + "");
         //---------------------------------------------
-
         //---------------------------------------------
 
 
         return convertView;
     }
-
+    private boolean isSelectAll(){
+        int count=0,i=0;
+        for(;i<getIsSelected().size();i++){
+            if(getIsSelected().get(i))
+                count++;
+        }
+        return count==i;
+    }
     /**
      * 查询商品信息
      *
@@ -115,9 +122,19 @@ public class FragShopcarAdapter extends BaseAdapter {
                     //设置价格
                     holder.mTvPrice.setText("¥ " + goods.getGoodsPrice());
                     holder.mTvGoodName.setText(goods.getGoodsName());
+//                    holder.mcb.setOnClickListener(new View.OnClickListener() {
+//                        @Override
+//                        public void onClick(View v) {
+//                            if(presenter.isSelectAll())
+//                                presenter.setSelectAll(true);
+//                            else
+//                                presenter.setSelectAll(false);
+//                        }
+//                    });
                     holder.mcb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                         @Override
                         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                            Log.i("pull","isChecked = "+isChecked);
                             if (isChecked) {
                                 //将选中的item的钱显示到下面
                                 LogUtils.i("myTag","我被选中了n");
@@ -135,6 +152,11 @@ public class FragShopcarAdapter extends BaseAdapter {
                                 //移除取消选中的itmd的购物车id
                                 presenter.removShopCarIds(shopCars.get(position).getObjectId());
                             }
+
+                            if(presenter.isSelectAll())
+                                presenter.setSelectAll(true);
+                            else
+                                presenter.setSelectAll(false);
                         }
                     });
 
@@ -147,7 +169,7 @@ public class FragShopcarAdapter extends BaseAdapter {
 
     // 初始化isSelected的数据i<5暂时固定数据测试
     private void initDate() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < shopCars.size(); i++) {
             getIsSelected().put(i, false);
         }
     }
