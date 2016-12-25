@@ -248,7 +248,8 @@ public class FragShopCarPresenterImpl implements IFragShopCarContract.IFragShopC
         mCb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!isSelectAll()) {//全选
+                Log.i("pull","mCb.isChecked = "+mCb.isChecked());
+                if (mCb.isChecked()) {
                     // 遍历list的长度，将MyAdapter中的map值全部设为true
                     for (int i = 0; i < listShopCas.size(); i++) {
                         getIsSelected().put(i, true);
@@ -260,8 +261,8 @@ public class FragShopCarPresenterImpl implements IFragShopCarContract.IFragShopC
                 } else {//取消全选
                     // 遍历list的长度，将已选的按钮设为未选
                     for (int i = 0; i < listShopCas.size(); i++) {
-                        if (FragShopcarAdapter.getIsSelected().get(i)) {
-                            FragShopcarAdapter.getIsSelected().put(i, false);
+                        if (getIsSelected().get(i)) {
+                            getIsSelected().put(i, false);
                         }
                     }
                     // 刷新listview和TextView的显示
@@ -269,17 +270,15 @@ public class FragShopCarPresenterImpl implements IFragShopCarContract.IFragShopC
                     mCb.setText("全选");
                     mCb.setChecked(false);
                 }
-
             }
         });
-
         mLv.setOnMenuItemClickListener(new SwipeMenuListView.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(final int position, SwipeMenu menu, int index) {
                 //获取选中的购物车中的id
                 //
                 LogUtils.i(TAG,"我的购物车中的"+listShopCas.size());
-                String itemObjectId = listShopCas.get(position).getObjectId();
+                final String itemObjectId = listShopCas.get(position).getObjectId();
                 LogUtils.i("myTag", "我选中" + position);
                 switch (index) {
                     case 0:
@@ -289,17 +288,20 @@ public class FragShopCarPresenterImpl implements IFragShopCarContract.IFragShopC
                         break;
                     case 1:
                         LogUtils.i(TAG, "我选中了删除按钮" + itemObjectId);
-                        // 删除收货地址
-                        delete(itemObjectId);
                         BmobQuery<Goods> query = new BmobQuery();
                         query.getObject(listShopCas.get(position).getGoodId(), new QueryListener<Goods>() {
                             @Override
                             public void done(Goods goods, BmobException e) {
+                                // 删除收货地址
+                                for(int i=position;i<getIsSelected().size()-1;i++)
+                                    getIsSelected().put(i,getIsSelected().get(i+1));
+                                getIsSelected().remove(getIsSelected().size()-1);
+                                delete(itemObjectId);
                                 changeMoney(listShopCas.get(position).getCount(),-goods.getGoodsPrice());
                                 removeGoodIds(listShopCas.get(position).getGoodId());
-                                removShopCarIds(listShopCas.get(position).getGoodId());
-                                Log.i("pull","checkedShopCars = "+checkedShopCars.size()+" listShopCas = "+listShopCas.size());
+                                removShopCarIds(listShopCas.get(position).getObjectId());
                                 listShopCas.remove(position);
+                                setSelectAll(isSelectAll());
                                 dataChanged();
                             }
                         });
@@ -312,9 +314,13 @@ public class FragShopCarPresenterImpl implements IFragShopCarContract.IFragShopC
 
     @Override
     public boolean isSelectAll(){
-        return checkedShopCars.size() == listShopCas.size()&&checkedShopCars.size()!=0;
+        Log.i("pull","listShopCas = "+listShopCas.size()+" checkedShopCars = "+checkedShopCars.size());
+        for(int i=0;i<getIsSelected().size();i++)
+           if(!getIsSelected().get(i))
+               return false;
+        return true;
     }
--
+
     @Override
     public void setSelectAll(boolean flag){
         if(flag)

@@ -4,61 +4,33 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="27561929863594"
+    timestamp="69823777650822"
     token="6594955928165700255"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1857" />
+        duration="4190" />
     <task
         name="instant-run-dex"
-        duration="31" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="51" />
+        duration="3325" />
     <task
         name="verifier"
-        duration="5" />
+        duration="657" />
 
     <artifact
-        location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/outputs/apk/Shop-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="14192403890656"
+        timestamp="69823777650822"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/outputs/apk/Shop-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="24290003382783"
-        verifier="METHOD_DELETED" >
-        <artifact
-            location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="27319786334276"
-        verifier="CLASS_ADDED" >
-        <artifact
-            location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="27445266636849"
-        verifier="IMPLEMENTED_INTERFACES_CHANGE" >
-        <artifact
-            location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="27561929863594"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

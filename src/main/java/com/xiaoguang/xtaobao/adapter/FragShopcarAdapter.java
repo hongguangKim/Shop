@@ -49,7 +49,7 @@ public class FragShopcarAdapter extends BaseAdapter {
         this.presenter = presenter;
 
         // 初始化数据
-        initDate();
+        //initDate();
     }
 
     @Override
@@ -98,14 +98,6 @@ public class FragShopcarAdapter extends BaseAdapter {
 
         return convertView;
     }
-    private boolean isSelectAll(){
-        int count=0,i=0;
-        for(;i<getIsSelected().size();i++){
-            if(getIsSelected().get(i))
-                count++;
-        }
-        return count==i;
-    }
     /**
      * 查询商品信息
      *
@@ -122,22 +114,13 @@ public class FragShopcarAdapter extends BaseAdapter {
                     //设置价格
                     holder.mTvPrice.setText("¥ " + goods.getGoodsPrice());
                     holder.mTvGoodName.setText(goods.getGoodsName());
-//                    holder.mcb.setOnClickListener(new View.OnClickListener() {
-//                        @Override
-//                        public void onClick(View v) {
-//                            if(presenter.isSelectAll())
-//                                presenter.setSelectAll(true);
-//                            else
-//                                presenter.setSelectAll(false);
-//                        }
-//                    });
                     holder.mcb.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                         @Override
                         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                            Log.i("pull","isChecked = "+isChecked);
                             if (isChecked) {
                                 //将选中的item的钱显示到下面
-                                LogUtils.i("myTag","我被选中了n");
+                                LogUtils.i("myTag","我被 q选中了n");
+                                getIsSelected().put(position, true);
                                 presenter.changeMoney(shopCars.get(position).getCount(), goods.getGoodsPrice());
                                 //将选中的商品Id保存起来
                                 presenter.saveGoodIds(shopCars.get(position).getGoodId());
@@ -146,17 +129,15 @@ public class FragShopcarAdapter extends BaseAdapter {
                             } else {
                                 //取消选中的则剔除
                                 LogUtils.i("myTag","我取消选中了呢");
+                                getIsSelected().put(position, false);
                                 presenter.changeMoney(shopCars.get(position).getCount(),-goods.getGoodsPrice());
                                 //移除商品id
                                 presenter.removeGoodIds(shopCars.get(position).getGoodId());
                                 //移除取消选中的itmd的购物车id
                                 presenter.removShopCarIds(shopCars.get(position).getObjectId());
                             }
-
-                            if(presenter.isSelectAll())
-                                presenter.setSelectAll(true);
-                            else
-                                presenter.setSelectAll(false);
+                            presenter.setSelectAll(presenter.isSelectAll());
+                            Log.i("pull","getIsSelected() = "+getIsSelected().toString());
                         }
                     });
 
@@ -168,11 +149,11 @@ public class FragShopcarAdapter extends BaseAdapter {
     }
 
     // 初始化isSelected的数据i<5暂时固定数据测试
-    private void initDate() {
-        for (int i = 0; i < shopCars.size(); i++) {
-            getIsSelected().put(i, false);
-        }
-    }
+//    private void initDate() {
+//        for (int i = 0; i < shopCars.size(); i++) {
+//            getIsSelected().put(i, false);
+//        }
+//    }
 
     public static HashMap<Integer, Boolean> getIsSelected() {
         return isSelected;

@@ -1,4 +1,4 @@
-#Fri Dec 23 12:52:07 CST 2016
+#Sun Dec 25 15:19:46 CST 2016
 base.0=/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0bae08b231556e612702c4831afce05d43cc836e
 renamed.1=classes.dex
 renamed.0=classes2.dex

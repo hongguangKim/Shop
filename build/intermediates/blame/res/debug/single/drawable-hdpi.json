@@ -192,12 +192,12 @@
         "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable-hdpi/act_goods_details_btn_dianpu.png"
     },
     {
-        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable-hdpi/frag_home_sort_jinkou.png",
-        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable-hdpi/frag_home_sort_jinkou.png"
-    },
-    {
         "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable-hdpi/love.png",
         "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable-hdpi/love.png"
+    },
+    {
+        "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable-hdpi/frag_home_sort_jinkou.png",
+        "source": "/Users/jinhongguang/Development/Git/MyApplication/Shop/src/main/res/drawable-hdpi/frag_home_sort_jinkou.png"
     },
     {
         "merged": "/Users/jinhongguang/Development/Git/MyApplication/Shop/build/intermediates/res/merged/debug/drawable-hdpi/frag_my_shoucang_baobei.png",
